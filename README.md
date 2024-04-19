@@ -41,10 +41,10 @@ In `main.py`, change project_id, subscription_id, mum_messages, retention_durati
 
 ```
 gcloud builds submit --tag gcr.io/[YOUR_PROJECT_ID]/manage-soft-delete
-gcloud run deploy manage-soft-delete --image gcr.io/[YOUR_PROJECT_ID]/manage-soft-delete --platform managed --region [YOUR_REGION] --service-account=[SERVICE_ACCOUNT]
+gcloud run deploy manage-soft-delete --image gcr.io/[YOUR_PROJECT_ID]/manage-soft-delete --platform managed --region [YOUR_REGION] --service-account=[YOUR_SERVICE_ACCOUNT]
 ```
 
-Note: Replace [YOUR_PROJECT_ID] and [YOUR_REGION] and [SERVICE_ACCOUNT] with your values
+Note: Replace [YOUR_PROJECT_ID] and [YOUR_REGION] and [YOUR_SERVICE_ACCOUNT] with your values
 
 ### Create an Eventarc trigger
 At the GCP Project level in the Cloud Console, navigate to Eventarc > Triggers > Create trigger
