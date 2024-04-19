@@ -28,14 +28,17 @@ At the org level, give it the following permission (to be able to edit Soft Dele
 ### Build & Deploy the 'manage-soft-delete' Cloud Run Service
 
 **Setting up your environment:**
+
 Follow the steps at: 
 - https://cloud.google.com/run/docs/setup
 - https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service
 
 **Configuration**
+
 In `main.py`, change project_id, subscription_name, max_messages, retention_duration_seconds with your values
 
 **Build the Container Image && Deploy to Cloud Run**
+
 ```
 gcloud builds submit --tag gcr.io/[YOUR_PROJECT_ID]/manage-soft-delete
 gcloud run deploy manage-soft-delete --image gcr.io/[YOUR_PROJECT_ID]/manage-soft-delete --platform managed --region [YOUR_REGION] --service-account=[SERVICE_ACCOUNT]
