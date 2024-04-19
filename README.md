@@ -1,4 +1,4 @@
-# Nanage Soft Delete
+# Manage Soft Delete
 
 Cloud Run service that can be triggered automatically (using Eventarc) each time an Audit Log entry for GCS bucket creation is generated within your GCP organization.
 The service can then manage the soft delete duration for the newly created bucket.
