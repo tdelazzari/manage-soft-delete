@@ -35,7 +35,7 @@ Follow the steps at:
 
 **Configuration**
 
-In `main.py`, change project_id, subscription_name, max_messages, retention_duration_seconds with your values
+In `main.py`, change project_id, subscription_id, mum_messages, retention_duration_seconds with your values
 
 **Build the Container Image && Deploy to Cloud Run**
 
